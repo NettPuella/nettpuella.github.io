@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>떠오르는 공간의 가치 Zero Gravity</title>
 
+  <!-- Open Graph / SNS 공유 미리보기 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="떠오르는 공간의 가치 Zero Gravity" />
+  <meta property="og:description" content="상가 / 관공서 / 에어컨 / 입주이사 / 사무실 / 정기청소 / 왁스코팅" />
+  <meta property="og:url" content="https://nettpuella.github.io/Zero_Gravity/" />
+  <meta property="og:image" content="https://nettpuella.github.io/Zero_Gravity/images/logo-share.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="떠오르는 공간의 가치 Zero Gravity" />
+  <meta name="twitter:description" content="꼼꼼한 마감과 약속시간 준수로 신뢰를 드립니다." />
+  <meta name="twitter:image" content="https://nettpuella.github.io/Zero_Gravity/images/logo-share.jpg" />
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
@@ -14,18 +26,17 @@
 
   <style>
     :root{
-      --zg-accent: #7c5cff;          /* 포인트 컬러(버튼/라인) */
-      --zg-accent2: #20c997;         /* 보조 포인트 */
+      --zg-accent: #7c5cff;
+      --zg-accent2: #20c997;
       --zg-dark: #0b1020;
     }
 
     html { scroll-behavior: smooth; }
-    body { background: #fff; 
-           font-family: "Pretendard", sans-serif; 
+    body {
+      background: #fff;
+      font-family: "Pretendard", sans-serif;
     }
-            
 
-    /* NAV: hero 위에서 반투명 + 스크롤 시 고정 느낌 */
     .navbar {
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
@@ -34,7 +45,6 @@
       background: rgba(255,255,255,0.88) !important;
     }
 
-    /* HERO: 이미지 배경 + 오버레이 + 전체 높이 */
     .hero{
       position: relative;
       min-height: 100vh;
@@ -47,7 +57,7 @@
       align-items:center;
       overflow:hidden;
     }
-    /* 어두운 오버레이 */
+
     .hero::before{
       content:"";
       position:absolute;
@@ -56,9 +66,9 @@
                   radial-gradient(circle at 80% 30%, rgba(32,201,151,0.25), transparent 50%),
                   rgba(0,0,0,0.60);
     }
+
     .hero .container { position: relative; z-index: 2; }
 
-    /* 별 반짝이는 레이어(가벼운 애니) */
     .stars{
       position:absolute;
       inset:0;
@@ -73,14 +83,17 @@
       opacity: .7;
       animation: twinkle 6s ease-in-out infinite;
     }
+
     @keyframes twinkle{
       0%,100%{ opacity:.55; transform: translateY(0); }
       50%{ opacity:.85; transform: translateY(-6px); }
     }
 
-    .badge-soft{ background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.20); }
+    .badge-soft{
+      background: rgba(255,255,255,.18);
+      border: 1px solid rgba(255,255,255,.20);
+    }
 
-    /* 버튼 스타일 */
     .btn-zg{
       background: linear-gradient(135deg, var(--zg-accent), var(--zg-accent2));
       border: none;
@@ -88,6 +101,7 @@
       box-shadow: 0 12px 30px rgba(124,92,255,.25);
     }
     .btn-zg:hover{ filter: brightness(1.05); transform: translateY(-1px); }
+
     .btn-outline-hero{
       border-color: rgba(255,255,255,.65);
       color:#fff;
@@ -98,13 +112,12 @@
       color:#fff;
     }
 
-    /* 섹션 공통 */
     .section{ padding: 80px 0; }
+
     @media (max-width: 991px){
       .section{ padding: 64px 0; }
     }
 
-    /* 카드 hover */
     .zg-card{
       border: 1px solid rgba(0,0,0,.06);
       transition: transform .2s ease, box-shadow .2s ease;
@@ -114,26 +127,27 @@
       box-shadow: 0 16px 40px rgba(11,16,32,.10);
     }
 
-    /* 갤러리 */
-    .gallery img{ object-fit: cover; height: 190px; }
+    .gallery img{
+      object-fit: cover;
+      height: 190px;
+    }
+
     @media (max-width: 575px){
       .gallery img{ height: 140px; }
     }
 
-    /* 구분선/타이틀 */
     .zg-underline{
-      width: 84px; height: 4px;
+      width: 84px;
+      height: 4px;
       background: linear-gradient(90deg, var(--zg-accent), var(--zg-accent2));
       border-radius: 999px;
     }
 
-    /* 푸터 */
     .zg-footer{
       background: #0a0f1e;
       color: rgba(255,255,255,.85);
     }
 
-    /* 로고 SVG 크기 */
     .zg-logo { width: 30px; height: 30px; }
   </style>
 </head>
@@ -144,7 +158,6 @@
   <nav class="navbar navbar-expand-lg zg-nav border-bottom sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#top">
-        <!-- 간단한 행성 로고(SVG) -->
         <svg class="zg-logo" viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <circle cx="32" cy="32" r="16" fill="#0d6efd" opacity="0.85"/>
           <path d="M6 34c10-10 42-20 52-6" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
@@ -165,13 +178,10 @@
           <li class="nav-item"><a class="nav-link" href="#contact">예약/문의</a></li>
         </ul>
 
-        <!-- 우측 CTA (모바일에서는 접히는 영역 안으로 들어감) -->
         <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
-          <!-- TODO: 전화번호 -->
           <a class="btn btn-sm btn-outline-secondary" href="tel:01081788502">
             <i class="bi bi-telephone"></i> 전화
           </a>
-          <!-- TODO: 카카오 링크 -->
           <a class="btn btn-sm btn-warning" href="https://open.kakao.com/o/syjFyPtg" target="_blank" rel="noopener">
             <i class="bi bi-chat-dots"></i> 카톡
           </a>
@@ -199,17 +209,14 @@
           </p>
 
           <div class="d-flex flex-wrap gap-2">
-            <!-- TODO 1: 구글폼 링크 -->
             <a class="btn btn-zg btn-lg" href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit" target="_blank" rel="noopener">
               <i class="bi bi-calendar-check"></i> 예약 신청(구글폼)
             </a>
 
-            <!-- TODO 2: 전화번호 -->
             <a class="btn btn-outline-hero btn-lg" href="tel:01081788502">
               <i class="bi bi-telephone"></i> 전화 상담
             </a>
 
-            <!-- TODO 3: 카카오 링크 -->
             <a class="btn btn-warning btn-lg" href="https://open.kakao.com/o/syjFyPtg" target="_blank" rel="noopener">
               <i class="bi bi-chat-dots"></i> 카카오톡 상담
             </a>
@@ -296,7 +303,7 @@
       </div>
 
       <div class="alert alert-primary mt-4 mb-0">
-        온라인 예약은 <b>구글폼</b>으로 접수 or 빠른 상담은<b>전화(010-6472-8987)/카톡</b>으로 연락주세요!
+        온라인 예약은 <b>구글폼</b>으로 접수 or 빠른 상담은 <b>전화(010-6472-8987)/카톡</b>으로 연락주세요!
       </div>
     </div>
   </section>
@@ -372,7 +379,6 @@
 
       <div class="mt-4 d-flex flex-wrap gap-2">
         <a class="btn btn-zg" href="#contact"><i class="bi bi-send"></i> 빠른문의</a>
-        <!-- TODO: 구글폼 링크 -->
         <a class="btn btn-outline-secondary" href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit" target="_blank" rel="noopener">
           <i class="bi bi-calendar-check"></i> 예약 신청
         </a>
@@ -387,117 +393,88 @@
       <div class="text-muted">클릭 후 블로그 후기 보러가기</div>
       <div class="zg-underline mt-3 mb-4"></div>
 
-      <!-- <div class="row g-3 gallery">
-        <div class="col-6 col-lg-3">
-          <img class="w-100 rounded-3" src="images/sample1.jpg" alt="작업 사진 1">
-        </div>
-        <div class="col-6 col-lg-3">
-          <img class="w-100 rounded-3" src="images/sample2.jpg" alt="작업 사진 2">
-        </div>
-        <div class="col-6 col-lg-3">
-          <img class="w-100 rounded-3" src="images/sample3.jpg" alt="작업 사진 3">
-        </div>
-        <div class="col-6 col-lg-3">
-          <img class="w-100 rounded-3" src="images/sample4.jpg" alt="작업 사진 4">
-        </div>
-      </div> -->
-        <div class="row g-3">
-      <!-- 카드 1 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224199676609" target="_blank" rel="noopener">
-          <div class="card h-100 zg-card">
-            <img class="card-img-top" src="images/sum1.png" alt="작업후기 1">
-            <div class="card-body">
-              <h6 class="fw-bold text-dark mb-1">공장호이스트청소</h6>
-              <p class="text-muted small mb-0">기계실, 오븐실 청소</p>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224199676609" target="_blank" rel="noopener">
+            <div class="card h-100 zg-card">
+              <img class="card-img-top" src="images/sum1.png" alt="작업후기 1">
+              <div class="card-body">
+                <h6 class="fw-bold text-dark mb-1">공장호이스트청소</h6>
+                <p class="text-muted small mb-0">기계실, 오븐실 청소</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-      
-      <!-- 카드 2 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224136184579" target="_blank" rel="noopener">
-          <div class="card h-100 zg-card">
-            <img class="card-img-top" src="images/sum2.png" alt="작업후기 2">
-            <div class="card-body">
-              <h6 class="fw-bold text-dark mb-1">식당 주방청소</h6>
-              <p class="text-muted small mb-0">후드 기름때 제거</p>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <!-- 카드 3 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224184113163" target="_blank" rel="noopener">
-          <div class="card h-100 zg-card">
-            <img class="card-img-top" src="images/sum3.png" alt="작업후기 3">
-            <div class="card-body">
-              <h6 class="fw-bold text-dark mb-1">준공/입주청소</h6>
-              <p class="text-muted small mb-0">입주청소 및 왁스코팅</p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224136184579" target="_blank" rel="noopener">
+            <div class="card h-100 zg-card">
+              <img class="card-img-top" src="images/sum2.png" alt="작업후기 2">
+              <div class="card-body">
+                <h6 class="fw-bold text-dark mb-1">식당 주방청소</h6>
+                <p class="text-muted small mb-0">후드 기름때 제거</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <!-- 카드 4 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224133070284" target="_blank" rel="noopener">
-          <div class="card h-100 zg-card">
-            <img class="card-img-top" src="images/sum4.png" alt="작업후기 4">
-            <div class="card-body"> 
-              <h6 class="fw-bold text-dark mb-1">건물 정기청소</h6>
-              <p class="text-muted small mb-0">주 1회-월 1회 · 맞춤 유지관리</p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224184113163" target="_blank" rel="noopener">
+            <div class="card h-100 zg-card">
+              <img class="card-img-top" src="images/sum3.png" alt="작업후기 3">
+              <div class="card-body">
+                <h6 class="fw-bold text-dark mb-1">준공/입주청소</h6>
+                <p class="text-muted small mb-0">입주청소 및 왁스코팅</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <a class="text-decoration-none" href="https://blog.naver.com/nettclean/224133070284" target="_blank" rel="noopener">
+            <div class="card h-100 zg-card">
+              <img class="card-img-top" src="images/sum4.png" alt="작업후기 4">
+              <div class="card-body">
+                <h6 class="fw-bold text-dark mb-1">건물 정기청소</h6>
+                <p class="text-muted small mb-0">주 1회-월 1회 · 맞춤 유지관리</p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
-     <div class="text-muted small mt-3"></div>
+      <div class="text-muted small mt-3"></div>
     </div>
   </section>
+
   <!-- YOUTUBE -->
-<section id="video" class="section bg-light">
-  <div class="container">
+  <section id="video" class="section bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-1">작업 영상</h2>
+      <div class="text-muted">실제 청소 작업 영상을 확인하세요.</div>
+      <div class="zg-underline mt-3 mb-4"></div>
 
-    <h2 class="fw-bold mb-1">작업 영상</h2>
-    <div class="text-muted">실제 청소 작업 영상을 확인하세요.</div>
-    <div class="zg-underline mt-3 mb-4"></div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/LB6aTjkNqe8" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
 
-    <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/3X_FyLyV-cY" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
 
-      <!-- 영상 1 -->
-      <div class="col-lg-6">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/LB6aTjkNqe8"
-          title="YouTube video"
-          allowfullscreen></iframe>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/Gm2kiBqhR_4" title="YouTube video" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-
-      <!-- 영상 2 -->
-      <div class="col-lg-6">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/3X_FyLyV-cY"
-          title="YouTube video"
-          allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <!-- 영상 3 -->
-      <div class="col-lg-6">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/Gm2kiBqhR_4"
-          title="YouTube video"
-          allowfullscreen></iframe>
-        </div>
-      </div>
-
     </div>
+  </section>
 
-  </div>
-</section>
   <!-- CONTACT -->
   <section id="contact" class="section zg-footer">
     <div class="container">
@@ -507,15 +484,12 @@
           <p class="mb-0" style="color:rgba(255,255,255,.75)">버튼을 누르면 바로 연결됩니다.</p>
         </div>
         <div class="col-lg-5 d-flex flex-wrap gap-2 justify-content-lg-end">
-          <!-- TODO: 구글폼 링크 -->
           <a class="btn btn-light" href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit" target="_blank" rel="noopener">
             <i class="bi bi-calendar-check"></i> 예약 신청
           </a>
-          <!-- TODO: 전화번호 -->
           <a class="btn btn-outline-light" href="tel:01081788502">
             <i class="bi bi-telephone"></i> 전화
           </a>
-          <!-- TODO: 카카오 링크 -->
           <a class="btn btn-warning" href="https://open.kakao.com/o/syjFyPtg" target="_blank" rel="noopener">
             <i class="bi bi-chat-dots"></i> 카카오톡
           </a>
