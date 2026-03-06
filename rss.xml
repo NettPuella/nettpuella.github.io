@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>제로그라비티 청소</title>
+    <link>https://nettpuella.github.io/</link>
+    <description>청라 청소업체 제로그라비티</description>
+    <item>
+      <title>제로그라비티 청소 홈페이지</title>
+      <link>https://nettpuella.github.io/</link>
+      <description>상가청소, 입주청소, 사무실청소, 에어컨청소, 외벽청소</description>
+      <pubDate>Thu, 06 Mar 2026 09:00:00 +0900</pubDate>
+      <guid>https://nettpuella.github.io/</guid>
+    </item>
+  </channel>
+</rss>
