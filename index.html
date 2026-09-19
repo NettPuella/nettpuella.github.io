@@ -382,6 +382,121 @@
     height: 36px;
   }
 }  
+
+/* 유튜브 작업영상 */
+.video-slider{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 4px 2px 14px;
+}
+
+.video-slider::-webkit-scrollbar{
+  display: none;
+}
+
+.video-card{
+  flex: 0 0 calc((100% - 20px) / 2);
+  scroll-snap-align: start;
+}
+
+.video-card-inner{
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.07);
+  height: 100%;
+}
+
+.video-frame{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.video-frame iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-body{
+  padding: 15px 16px;
+}
+
+.video-title{
+  margin: 0;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  min-height: 46px;
+}
+
+.video-date{
+  margin-top: 7px;
+  color: #888;
+  font-size: 13px;
+}
+
+.video-arrow{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  transition: .2s ease;
+}
+
+.video-arrow:hover{
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.video-loading{
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  color: #888;
+}
+
+/* 모바일 : 영상 1개 */
+@media (max-width: 575px){
+  .video-slider{
+    gap: 12px;
+  }
+
+  .video-card{
+    flex-basis: 100%;
+  }
+
+  .video-title{
+    font-size: 15px;
+    min-height: 43px;
+  }
+
+  .video-arrow{
+    width: 36px;
+    height: 36px;
+  }
+}
   </style>
 </head>
 
@@ -447,7 +562,7 @@
             </a>
 
             <a class="btn btn-outline-hero btn-lg" href="tel:01081788502">
-             T. 010-8178-8502
+             T. 010-6472-8987
             </a>
 
             <a class="btn btn-kakao btn-lg" href="https://open.kakao.com/o/syjFyPtg" target="_blank">
@@ -672,57 +787,52 @@
 </section>
 
   <!-- YOUTUBE -->
+<!-- YOUTUBE -->
 <section id="video" class="section bg-light">
   <div class="container">
-    <h2 class="fw-bold mb-1">작업 영상</h2>
-    <div class="text-muted">실제 청소 작업 영상을 확인하세요.</div>
+
+    <div class="d-flex align-items-end justify-content-between mb-2">
+      <div>
+        <h2 class="fw-bold mb-1">작업 영상</h2>
+        <div class="text-muted">
+          제로그라비티의 실제 청소 작업 영상을 확인하세요.
+        </div>
+      </div>
+
+      <div class="video-controls d-flex gap-2">
+        <button type="button" class="video-arrow" id="videoPrev" aria-label="이전 영상">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <button type="button" class="video-arrow" id="videoNext" aria-label="다음 영상">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
     <div class="zg-underline mt-3 mb-4"></div>
 
-    <div class="row g-4">
-
-      <div class="col-12 col-lg-6">
-        <div class="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/no2rnXRRnMY"
-            title="제로그라비티 작업영상 1"
-            allowfullscreen>
-          </iframe>
-        </div>
+    <div class="video-slider" id="videoSlider">
+      <div class="video-loading">
+        최근 작업 영상을 불러오는 중입니다.
       </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/LB6aTjkNqe8"
-            title="제로그라비티 작업영상 2"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/3X_FyLyV-cY"
-            title="제로그라비티 작업영상 3"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Gm2kiBqhR_4"
-            title="제로그라비티 작업영상 4"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
     </div>
+
+    <div class="text-center mt-4">
+      <a
+        href="https://www.youtube.com/@Zero_Gravity24"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-outline-dark rounded-pill px-4"
+      >
+        유튜브 작업영상 전체보기
+        <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+
   </div>
 </section>
+
   <!-- CONTACT -->
   <section id="contact" class="section zg-footer">
     <div class="container">
@@ -779,6 +889,8 @@
       <span>네이버 블로그</span>
     </a>
   </div>
+
+<!-- 블로그 스크립트 -->
 <script>
   const workSlider = document.getElementById("workSlider");
   const workPrev = document.getElementById("workPrev");
@@ -875,6 +987,109 @@
   workNext.addEventListener("click", () => moveWorkSlider(1));
 
   loadBlogPosts();
+</script>
+
+<!--유튜브 스크립트-->
+<script>
+  const videoSlider = document.getElementById("videoSlider");
+  const videoPrev = document.getElementById("videoPrev");
+  const videoNext = document.getElementById("videoNext");
+
+  function formatVideoDate(dateString) {
+    const date = new Date(dateString);
+
+    if (isNaN(date)) return "";
+
+    return date.toLocaleDateString("ko-KR", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    });
+  }
+
+  async function loadYoutubeVideos() {
+    try {
+      const response = await fetch("./youtube-videos.json?v=" + Date.now());
+
+      if (!response.ok) {
+        throw new Error("유튜브 데이터를 불러오지 못했습니다.");
+      }
+
+      const videos = await response.json();
+
+      if (!videos.length) {
+        throw new Error("표시할 영상이 없습니다.");
+      }
+
+      videoSlider.innerHTML = "";
+
+      videos.forEach((video) => {
+        const card = document.createElement("div");
+        card.className = "video-card";
+
+        card.innerHTML = `
+          <div class="video-card-inner">
+
+            <div class="video-frame">
+              <iframe
+                src="${video.embed}"
+                title="${video.title}"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="video-body">
+              <h3 class="video-title">${video.title}</h3>
+              <div class="video-date">
+                ${formatVideoDate(video.published)}
+              </div>
+            </div>
+
+          </div>
+        `;
+
+        videoSlider.appendChild(card);
+      });
+
+    } catch (error) {
+      console.error(error);
+
+      videoSlider.innerHTML = `
+        <div class="video-loading">
+          작업 영상을 불러오지 못했습니다.
+          <br>
+          <a
+            href="https://www.youtube.com/@Zero_Gravity24"
+            target="_blank"
+            rel="noopener"
+          >
+            유튜브에서 확인하기
+          </a>
+        </div>
+      `;
+    }
+  }
+
+  function moveVideoSlider(direction) {
+    const card = videoSlider.querySelector(".video-card");
+
+    if (!card) return;
+
+    const gap = parseFloat(getComputedStyle(videoSlider).gap) || 0;
+    const move = card.getBoundingClientRect().width + gap;
+
+    videoSlider.scrollBy({
+      left: direction * move,
+      behavior: "smooth"
+    });
+  }
+
+  videoPrev.addEventListener("click", () => moveVideoSlider(-1));
+  videoNext.addEventListener("click", () => moveVideoSlider(1));
+
+  loadYoutubeVideos();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
