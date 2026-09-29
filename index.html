@@ -2,33 +2,69 @@
 <html lang="ko">
 <head>
   <meta name="naver-site-verification" content="fc01559148b8d243cd5005fdf301feb96d39bba4" />
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
   <link rel="shortcut icon" href="/favicon.png">
 
-  <meta name="description" content="떠오르는 공간의 가치를 만들어 드립니다. 관공서, 공장청소, 상가청소, 사무실청소, 에어컨청소, 왁스코팅 전문, 수도권 및 충청권 무료 출장 서비스" />
-  <meta name="keywords" content="청라 청소, 인천 청소업체, 제로그라비티 청소, 청라 입주청소, 청라 상가청소, 에어컨 청소, 왁스코팅, 외벽청소 전문" />
-  <title>종합청소업체 제로그라비티 | 공장청소 상가청소 사무실청소 외벽청소 바닥청소 왁스코팅 </title>
+  <!-- SEO -->
+  <meta
+    name="description"
+    content="떠오르는 공간의 가치, 제로그라비티. 상가청소, 공장청소, 사무실청소, 관공서청소, 바닥청소, 외벽·유리창청소, 에어컨청소, 왁스코팅, 특수청소 전문."
+  />
 
-  <!-- Open Graph / SNS 공유 미리보기 -->
+  <meta
+    name="keywords"
+    content="제로그라비티, 인천 청소업체, 청라 청소업체, 상가청소, 공장청소, 사무실청소, 관공서청소, 바닥청소, 주차장청소, 에어컨청소, 외벽청소, 유리창청소, 왁스코팅, 특수청소"
+  />
+
+  <title>종합청소업체 제로그라비티 | 공장청소 상가청소 사무실청소 외벽청소 바닥청소</title>
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="인천 청라 청소업체 제로그라비티 | 공장청소 상가청소 사무실청소 외벽청소" />
-  <meta property="og:description" content="상가 / 관공서 / 에어컨 / 입주이사 / 사무실 / 정기청소 / 왁스코팅" />
-  <meta property="og:url" content="https://nettpuella.github.io/" />
-  <meta property="og:image" content="https://nettpuella.github.io/images/logo-share.jpg" />
+  <meta
+    property="og:title"
+    content="종합청소업체 제로그라비티 | 공장청소 상가청소 사무실청소"
+  />
+  <meta
+    property="og:description"
+    content="상가·공장·사무실·관공서·바닥·외벽·유리창·에어컨·특수청소 전문"
+  />
+  <meta property="og:url" content="https://제로그라비티.com/" />
+  <meta property="og:image" content="https://제로그라비티.com/images/logo-share.jpg" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="인천 청라 청소업체 제로그라비티 | 공장청소 상가청소 사무실청소 외벽청소" />
-  <meta name="twitter:description" content="꼼꼼한 마감과 약속시간 준수로 신뢰를 드립니다." />
-  <meta name="twitter:image" content="https://nettpuella.github.io/images/logo-share.jpg" />
+  <meta
+    name="twitter:title"
+    content="종합청소업체 제로그라비티 | 공장청소 상가청소 사무실청소"
+  />
+  <meta
+    name="twitter:description"
+    content="전문 장비와 현장 맞춤 작업으로 사업장 청소를 진행합니다."
+  />
+  <meta name="twitter:image" content="https://제로그라비티.com/images/logo-share.jpg" />
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
   <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- 폰트 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Pretendard -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+  >
 
   <style>
     :root{
@@ -37,25 +73,32 @@
       --zg-dark: #0b1020;
     }
 
-    html { scroll-behavior: smooth; }
+    html{
+      scroll-behavior: smooth;
+    }
 
     body{
       background: #fff;
       font-family: "Pretendard", sans-serif;
     }
 
-    .navbar {
+    /* NAV */
+
+    .navbar{
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
     }
 
-    .hero-buttons .btn{
-      width: 180px;
-    }
-
-    .navbar.zg-nav {
+    .navbar.zg-nav{
       background: rgba(255,255,255,0.88) !important;
     }
+
+    .zg-logo{
+      width: 30px;
+      height: 30px;
+    }
+
+    /* HERO */
 
     .hero{
       position: relative;
@@ -75,8 +118,16 @@
       position:absolute;
       inset:0;
       background:
-        radial-gradient(circle at 20% 10%, rgba(124,92,255,0.35), transparent 55%),
-        radial-gradient(circle at 80% 30%, rgba(32,201,151,0.25), transparent 50%),
+        radial-gradient(
+          circle at 20% 10%,
+          rgba(124,92,255,0.35),
+          transparent 55%
+        ),
+        radial-gradient(
+          circle at 80% 30%,
+          rgba(32,201,151,0.25),
+          transparent 50%
+        ),
         rgba(0,0,0,0.60);
     }
 
@@ -90,19 +141,48 @@
       inset:0;
       z-index:1;
       pointer-events:none;
+
       background-image:
-        radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.35), transparent 60%),
-        radial-gradient(1px 1px at 120px 80px, rgba(255,255,255,.35), transparent 60%),
-        radial-gradient(1.5px 1.5px at 220px 140px, rgba(255,255,255,.28), transparent 60%),
-        radial-gradient(1px 1px at 80% 35%, rgba(255,255,255,.25), transparent 60%),
-        radial-gradient(2px 2px at 75% 70%, rgba(255,255,255,.18), transparent 60%);
+        radial-gradient(
+          2px 2px at 20px 30px,
+          rgba(255,255,255,.35),
+          transparent 60%
+        ),
+        radial-gradient(
+          1px 1px at 120px 80px,
+          rgba(255,255,255,.35),
+          transparent 60%
+        ),
+        radial-gradient(
+          1.5px 1.5px at 220px 140px,
+          rgba(255,255,255,.28),
+          transparent 60%
+        ),
+        radial-gradient(
+          1px 1px at 80% 35%,
+          rgba(255,255,255,.25),
+          transparent 60%
+        ),
+        radial-gradient(
+          2px 2px at 75% 70%,
+          rgba(255,255,255,.18),
+          transparent 60%
+        );
+
       opacity: .7;
       animation: twinkle 6s ease-in-out infinite;
     }
 
     @keyframes twinkle{
-      0%,100%{ opacity:.55; transform: translateY(0); }
-      50%{ opacity:.85; transform: translateY(-6px); }
+      0%,100%{
+        opacity:.55;
+        transform: translateY(0);
+      }
+
+      50%{
+        opacity:.85;
+        transform: translateY(-6px);
+      }
     }
 
     .badge-soft{
@@ -110,16 +190,30 @@
       border: 1px solid rgba(255,255,255,.20);
     }
 
+    .hero-buttons .btn{
+      width: 180px;
+    }
+
+    /* BUTTON */
+
     .btn-zg{
-      background: linear-gradient(135deg, var(--zg-accent), var(--zg-accent2));
+      background: linear-gradient(
+        135deg,
+        var(--zg-accent),
+        var(--zg-accent2)
+      );
+
       border: none;
       color: #fff;
-      box-shadow: 0 12px 30px rgba(124,92,255,.25);
+
+      box-shadow:
+        0 12px 30px rgba(124,92,255,.25);
     }
 
     .btn-zg:hover{
       filter: brightness(1.05);
       transform: translateY(-1px);
+      color: #fff;
     }
 
     .btn-outline-hero{
@@ -132,11 +226,15 @@
       border-color: rgba(255,255,255,.85);
       color:#fff;
     }
+
     .btn-kakao{
       background: #FEE500;
       color: #191919;
       border: none;
     }
+
+    /* SECTION */
+
     .section{
       padding: 80px 0;
     }
@@ -147,15 +245,86 @@
       }
     }
 
+    .zg-underline{
+      width: 84px;
+      height: 4px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--zg-accent),
+          var(--zg-accent2)
+        );
+
+      border-radius: 999px;
+    }
+
+    /* CARDS */
+
     .zg-card{
       border: 1px solid rgba(0,0,0,.06);
-      transition: transform .2s ease, box-shadow .2s ease;
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
     }
 
     .zg-card:hover{
       transform: translateY(-3px);
-      box-shadow: 0 16px 40px rgba(11,16,32,.10);
+
+      box-shadow:
+        0 16px 40px rgba(11,16,32,.10);
     }
+
+    /* 가격 안내 이미지 카드 */
+
+    .price-card{
+      overflow: hidden;
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .price-card-image{
+      width: 100%;
+      height: 220px;
+
+      object-fit: cover;
+      display: block;
+
+      transition: transform .35s ease;
+    }
+
+    .price-card:hover .price-card-image{
+      transform: scale(1.025);
+    }
+
+    .price-card .card-body{
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-card .card-body p{
+      flex-grow: 1;
+    }
+
+    @media (max-width: 991px){
+      .price-card-image{
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 575px){
+      .price-card-image{
+        height: 190px;
+      }
+
+      .price-card .card-body{
+        padding: 20px;
+      }
+    }
+
+    /* 기존 이미지 */
 
     .gallery img{
       object-fit: cover;
@@ -174,31 +343,25 @@
       }
     }
 
-    .zg-underline{
-      width: 84px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--zg-accent), var(--zg-accent2));
-      border-radius: 999px;
-    }
+    /* FOOTER */
 
     .zg-footer{
       background: #0a0f1e;
       color: rgba(255,255,255,.85);
     }
 
-    .zg-logo{
-      width: 30px;
-      height: 30px;
-    }
+    /* FLOATING CONTACT */
 
-    /* floating contact buttons */
     .floating-contact{
       position: fixed;
       right: 20px;
       bottom: 80px;
+
       z-index: 9999;
+
       display: flex;
       flex-direction: column;
+
       gap: 10px;
     }
 
@@ -206,20 +369,33 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       gap: 8px;
+
       min-width: 150px;
+
       padding: 12px 16px;
+
       border-radius: 999px;
+
       color: #fff;
       text-decoration: none;
       font-weight: 600;
-      box-shadow: 0 10px 25px rgba(0,0,0,.18);
-      transition: transform .2s ease, box-shadow .2s ease;
+
+      box-shadow:
+        0 10px 25px rgba(0,0,0,.18);
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
     }
 
     .floating-btn:hover{
       transform: translateY(-2px);
-      box-shadow: 0 14px 28px rgba(0,0,0,.22);
+
+      box-shadow:
+        0 14px 28px rgba(0,0,0,.22);
+
       color: #fff;
     }
 
@@ -229,7 +405,12 @@
     }
 
     .floating-btn.phone{
-      background: linear-gradient(135deg, #7c5cff, #20c997);
+      background:
+        linear-gradient(
+          135deg,
+          #7c5cff,
+          #20c997
+        );
     }
 
     .floating-btn.blog{
@@ -238,6 +419,7 @@
     }
 
     @media (max-width: 576px){
+
       .floating-contact{
         right: 14px;
         bottom: 100px;
@@ -253,846 +435,2052 @@
         display: none;
       }
     }
-    /* 블로그 불러오기 추가 */
-    /* 최근 작업 사례 */
-.work-slider{
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  padding: 4px 2px 14px;
-}
 
-.work-slider::-webkit-scrollbar{
-  display: none;
-}
+    /* =========================
+       최근 작업 사례
+    ========================= */
 
-.work-card{
-  flex: 0 0 calc((100% - 48px) / 4);
-  scroll-snap-align: start;
-  text-decoration: none;
-  color: inherit;
-}
+    .work-slider{
+      display: flex;
 
-.work-card-inner{
-  height: 100%;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,.07);
-  border-radius: 12px;
-  background: #fff;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
+      gap: 16px;
 
-.work-card-inner:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 14px 35px rgba(11,16,32,.10);
-}
+      overflow-x: auto;
 
-.work-image{
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-  background: #f1f3f5;
-}
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
 
-.work-body{
-  padding: 16px;
-}
+      scrollbar-width: none;
 
-.work-title{
-  color: #111;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 1.4;
-  margin: 0;
+      padding: 4px 2px 14px;
+    }
 
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+    .work-slider::-webkit-scrollbar{
+      display: none;
+    }
 
-  min-height: 48px;
-}
+    .work-card{
+      flex: 0 0 calc((100% - 48px) / 4);
 
-.work-date{
-  color: #888;
-  font-size: 13px;
-  margin-top: 8px;
-}
+      scroll-snap-align: start;
 
-.work-arrow{
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 19px;
-  transition: .2s ease;
-}
+      text-decoration: none;
+      color: inherit;
+    }
 
-.work-arrow:hover{
-  background: #111;
-  color: #fff;
-  border-color: #111;
-}
+    .work-card-inner{
+      height: 100%;
 
-.work-loading{
-  width: 100%;
-  padding: 40px 0;
-  text-align: center;
-  color: #888;
-}
+      overflow: hidden;
 
-/* 태블릿 : 3개 */
-@media (max-width: 991px){
-  .work-card{
-    flex-basis: calc((100% - 32px) / 3);
-  }
-}
+      border:
+        1px solid rgba(0,0,0,.07);
 
-/* 모바일 : 2개 */
-@media (max-width: 575px){
-  .work-slider{
-    gap: 10px;
-  }
+      border-radius: 12px;
 
-  .work-card{
-    flex-basis: calc((100% - 10px) / 2);
-  }
+      background: #fff;
 
-  .work-body{
-    padding: 11px;
-  }
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+    }
 
-  .work-title{
-    font-size: 14px;
-    min-height: 40px;
-  }
+    .work-card-inner:hover{
+      transform: translateY(-3px);
 
-  .work-date{
-    font-size: 11px;
-  }
+      box-shadow:
+        0 14px 35px rgba(11,16,32,.10);
+    }
 
-  .work-arrow{
-    width: 36px;
-    height: 36px;
-  }
-}  
+    .work-image{
+      width: 100%;
 
-/* 유튜브 작업영상 */
-.video-slider{
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  padding: 4px 2px 14px;
-}
+      aspect-ratio: 4 / 3;
 
-.video-slider::-webkit-scrollbar{
-  display: none;
-}
+      object-fit: cover;
 
-.video-card{
-  flex: 0 0 calc((100% - 20px) / 2);
-  scroll-snap-align: start;
-}
+      display: block;
 
-.video-card-inner{
-  overflow: hidden;
-  border-radius: 14px;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.07);
-  height: 100%;
-}
+      background: #f1f3f5;
+    }
 
-.video-frame{
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #000;
-}
+    .work-body{
+      padding: 16px;
+    }
 
-.video-frame iframe{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+    .work-title{
+      color: #111;
 
-.video-body{
-  padding: 15px 16px;
-}
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 1.4;
 
-.video-title{
-  margin: 0;
-  color: #111;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.45;
+      margin: 0;
 
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+      display: -webkit-box;
 
-  min-height: 46px;
-}
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
 
-.video-date{
-  margin-top: 7px;
-  color: #888;
-  font-size: 13px;
-}
+      overflow: hidden;
 
-.video-arrow{
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 19px;
-  transition: .2s ease;
-}
+      min-height: 48px;
+    }
 
-.video-arrow:hover{
-  background: #111;
-  color: #fff;
-  border-color: #111;
-}
+    .work-date{
+      color: #888;
 
-.video-loading{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  color: #888;
-}
+      font-size: 13px;
 
-/* 모바일 : 영상 1개 */
-@media (max-width: 575px){
-  .video-slider{
-    gap: 12px;
-  }
+      margin-top: 8px;
+    }
 
-  .video-card{
-    flex-basis: 100%;
-  }
+    .work-arrow{
+      width: 42px;
+      height: 42px;
 
-  .video-title{
-    font-size: 15px;
-    min-height: 43px;
-  }
+      border-radius: 50%;
 
-  .video-arrow{
-    width: 36px;
-    height: 36px;
-  }
-}
+      border: 1px solid #ddd;
+
+      background: #fff;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      font-size: 19px;
+
+      transition: .2s ease;
+    }
+
+    .work-arrow:hover{
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    .work-loading{
+      width: 100%;
+
+      padding: 40px 0;
+
+      text-align: center;
+
+      color: #888;
+    }
+
+    /* 태블릿 : 3개 */
+
+    @media (max-width: 991px){
+
+      .work-card{
+        flex-basis:
+          calc((100% - 32px) / 3);
+      }
+    }
+
+    /* 모바일 : 2개 */
+
+    @media (max-width: 575px){
+
+      .work-slider{
+        gap: 10px;
+      }
+
+      .work-card{
+        flex-basis:
+          calc((100% - 10px) / 2);
+      }
+
+      .work-body{
+        padding: 11px;
+      }
+
+      .work-title{
+        font-size: 14px;
+        min-height: 40px;
+      }
+
+      .work-date{
+        font-size: 11px;
+      }
+
+      .work-arrow{
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    /* =========================
+       유튜브 작업영상
+    ========================= */
+
+    .video-slider{
+      display: flex;
+
+      gap: 20px;
+
+      overflow-x: auto;
+
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+
+      scrollbar-width: none;
+
+      padding: 4px 2px 14px;
+    }
+
+    .video-slider::-webkit-scrollbar{
+      display: none;
+    }
+
+    .video-card{
+      flex:
+        0 0 calc((100% - 20px) / 2);
+
+      scroll-snap-align: start;
+    }
+
+    .video-card-inner{
+      overflow: hidden;
+
+      border-radius: 14px;
+
+      background: #fff;
+
+      border:
+        1px solid rgba(0,0,0,.07);
+
+      height: 100%;
+    }
+
+    .video-frame{
+      position: relative;
+
+      width: 100%;
+
+      aspect-ratio: 16 / 9;
+
+      background: #000;
+    }
+
+    .video-frame iframe{
+      position: absolute;
+
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+    }
+
+    .video-body{
+      padding: 15px 16px;
+    }
+
+    .video-title{
+      margin: 0;
+
+      color: #111;
+
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.45;
+
+      display: -webkit-box;
+
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+
+      overflow: hidden;
+
+      min-height: 46px;
+    }
+
+    .video-date{
+      margin-top: 7px;
+
+      color: #888;
+
+      font-size: 13px;
+    }
+
+    .video-arrow{
+      width: 42px;
+      height: 42px;
+
+      border-radius: 50%;
+
+      border: 1px solid #ddd;
+
+      background: #fff;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      font-size: 19px;
+
+      transition: .2s ease;
+    }
+
+    .video-arrow:hover{
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    .video-loading{
+      width: 100%;
+
+      padding: 50px 0;
+
+      text-align: center;
+
+      color: #888;
+    }
+
+    @media (max-width: 575px){
+
+      .video-slider{
+        gap: 12px;
+      }
+
+      .video-card{
+        flex-basis: 100%;
+      }
+
+      .video-title{
+        font-size: 15px;
+        min-height: 43px;
+      }
+
+      .video-arrow{
+        width: 36px;
+        height: 36px;
+      }
+    }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- NAV -->
+  <!-- =========================
+       NAV
+  ========================== -->
+
   <nav class="navbar navbar-expand-lg zg-nav border-bottom sticky-top">
+
     <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#top">
-        <svg class="zg-logo" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <circle cx="32" cy="32" r="16" fill="#0d6efd" opacity="0.85"/>
-          <path d="M6 34c10-10 42-20 52-6" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
-          <path d="M10 40c12-8 38-14 44-2" stroke="#20c997" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+
+      <a
+        class="navbar-brand fw-bold d-flex align-items-center gap-2"
+        href="#top"
+      >
+
+        <svg
+          class="zg-logo"
+          viewBox="0 0 64 64"
+          fill="none"
+          aria-hidden="true"
+        >
+
+          <circle
+            cx="32"
+            cy="32"
+            r="16"
+            fill="#0d6efd"
+            opacity="0.85"
+          />
+
+          <path
+            d="M6 34c10-10 42-20 52-6"
+            stroke="#ffffff"
+            stroke-width="4"
+            stroke-linecap="round"
+            opacity="0.9"
+          />
+
+          <path
+            d="M10 40c12-8 38-14 44-2"
+            stroke="#20c997"
+            stroke-width="4"
+            stroke-linecap="round"
+            opacity="0.9"
+          />
+
         </svg>
+
         <span>Zero Gravity</span>
+
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav"
+      >
+
         <span class="navbar-toggler-icon"></span>
+
       </button>
 
-      <div class="collapse navbar-collapse" id="nav">
+
+      <div
+        class="collapse navbar-collapse"
+        id="nav"
+      >
+
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#services">서비스</a></li>
-          <li class="nav-item"><a class="nav-link" href="#prices">가격</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">작업사진</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">예약/문의</a></li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#services"
+            >
+              서비스
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#prices"
+            >
+              가격
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#gallery"
+            >
+              작업사진
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#contact"
+            >
+              예약/문의
+            </a>
+          </li>
+
         </ul>
 
-        <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
-          <a class="btn btn-sm btn-outline-secondary" href="tel:01081788502">
-            <i class="bi bi-telephone"></i> 전화
-          </a>
-          <a class="btn btn-sm btn-warning" href="https://open.kakao.com/o/syjFyPtg" target="_blank" rel="noopener">
-            <i class="bi bi-chat-dots"></i> 카톡
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <!-- HERO -->
-  <header id="top" class="hero">
-    <div class="stars" aria-hidden="true"></div>
+        <div
+          class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0"
+        >
 
-    <div class="container py-5">
-      <div class="row align-items-center g-4 py-4">
-        <div class="col-lg-7">
-          <span class="badge rounded-pill badge-soft px-3 py-2 mb-3">
-            <i class="bi bi-lightning-charge"></i> 당일 상담 · 맞춤 견적
-          </span>
-          <!-- 모바일 화면 줄바꿈 제거 -->
-          <h1 class="display-5 fw-bold mb-3">떠오르는 공간의 가치 제로그라비티</h1>
-
-          <p class="lead mb-4 opacity-90">
-            상가 / 관공서 / 에어컨 / 입주 / 사무실 / 정기청소 / 왁스코팅
-            <br>꼼꼼한 마감과 약속시간 준수로 신뢰를 드립니다.
-          </p>
-
-          <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-zg btn-lg" href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit" target="_blank">
-            예약 신청(구글폼)
-            </a>
-
-            <a class="btn btn-outline-hero btn-lg" href="tel:01081788502">
-             T. 010-8178-8502
-            </a>
-
-            <a class="btn btn-kakao btn-lg" href="https://open.kakao.com/o/syjFyPtg" target="_blank">
-             카카오톡 상담
-            </a>
-          </div>
-
-          <div class="mt-4 small opacity-75">
-            운영시간 09:00~20:00<br> 
-            서비스 지역 서울 / 경기 / 수도권 전지역 / 충청권<br> 
-            세금계산서 / 현금영수증 발행 가능
-          </div>
-        </div>
-
-        <div class="col-lg-5">
-          <div class="bg-white text-dark rounded-4 p-4 shadow-lg">
-            <div class="d-flex align-items-center justify-content-between mb-2">
-              <h5 class="fw-bold mb-0">빠른 견적 체크</h5>
-              <span class="badge text-bg-light border"><i class="bi bi-shield-check"></i> 안심 진행</span>
-            </div>
-            <div class="zg-underline my-3"></div>
-            <ul class="mb-0">
-              <li>평수/면적</li>
-              <li>청소 종류(관공서/상가/사무실/정기/입주이사)</li>
-              <li>희망 날짜/시간</li>
-              <li>특이사항(곰팡이/창틀/오염도 등)</li>
-            </ul>
-            <div class="mt-3 small text-muted">
-              * 신청 후 확인 연락(전화/카톡)으로 일정 확정
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- SERVICES -->
-  <section id="services" class="section">
-    <div class="container">
-      <div class="d-flex align-items-end justify-content-between mb-4">
-        <div>
-          <h2 class="fw-bold mb-1">서비스</h2>
-          <div class="text-muted">필요한 옵션만 골라서 진행할 수 있어요.</div>
-          <div class="zg-underline mt-3"></div>
-        </div>
-      </div>
-
-      <div class="row g-3">
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <div class="mb-2"><i class="bi bi-house-door fs-3 text-primary"></i></div>
-              <h5 class="fw-bold">상업공간 청소</h5>
-              <p class="text-muted mb-0">식당청소, 상가청소, 매장청소, 왁스코팅, 바닥청소</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <div class="mb-2"><i class="bi bi-truck fs-3 text-success"></i></div>
-              <h5 class="fw-bold">공장 청소</h5>
-              <p class="text-muted mb-0">현장 상황에 맞는 전문 약품과 기계로 안전한 케어</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <div class="mb-2"><i class="bi bi-building fs-3" style="color:var(--zg-accent)"></i></div>
-              <h5 class="fw-bold">사무실 청소</h5>
-              <p class="text-muted mb-0">업무공간·공용부 정기 관리 가능</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <div class="mb-2"><i class="bi bi-calendar2-week fs-3 text-dark"></i></div>
-              <h5 class="fw-bold">정기 청소</h5>
-              <p class="text-muted mb-0">주 1회~월 1회, 일정 고정/맞춤</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="alert alert-primary mt-4 mb-0">
-        온라인 예약은 <b>구글폼</b>으로 접수 or 빠른 상담은 <b>전화(010-8178-8502)/카톡</b>으로 연락주세요!
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICES -->
-  <section id="prices" class="section bg-light">
-    <div class="container">
-      <h2 class="fw-bold mb-1">가격 안내</h2>
-      <div class="text-muted">무료 방문견적 후 안내드리고 있으며 현장 상황/옵션에 따라 달라질 수 있어요.</div>
-      <div class="zg-underline mt-3 mb-4"></div>
-
-      <div class="row g-3">
-        <div class="col-md-4">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <h5 class="fw-bold">상가/상업공간</h5>
-              <p class="text-muted">공간 규모와 오염 상태, 작업 범위에 따라 맞춤 클리닝</p>
-              <div>기본: <span class="fw-bold">₩180,000~</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <h5 class="fw-bold">바닥 청소</h5>
-              <p class="text-muted">보도블럭, 데코타일 바닥, 주차장, 포세린타일, 공장 바닥청소</p>
-              <div>기본: <span class="fw-bold">₩200,000~</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <h5 class="fw-bold">에어컨 분해청소</h5>
-              <p class="text-muted">1Way·2Way·4Way 시스템에어컨 전문 분해 세척</p>
-              <div>기본: <span class="fw-bold">₩80,000~</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <h5 class="fw-bold">외벽/유리창 청소</h5>
-              <p class="text-muted">전문 장비와 숙련된 작업으로 진행하는 외벽·유리창 청소</p>
-              <div>기본: <span class="fw-bold">₩150,000~</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <h5 class="fw-bold">왁스코팅</h5>
-              <p class="text-muted">전문 코팅 작업으로 바닥 보호 및 장시간 광택 유지</p>
-              <div>기본: <span class="fw-bold">₩250,000~</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 zg-card">
-            <div class="card-body">
-              <h5 class="fw-bold">특수청소</h5>
-              <p class="text-muted">비둘기 오염, 쓰레기집, 고독사 현장 등 특수 환경 전문 클리닝</p>
-              <div>기본: <span class="fw-bold">무료 방문견적</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-4 d-flex flex-wrap gap-2">
-        <a class="btn btn-zg" href="#contact"><i class="bi bi-send"></i> 빠른문의</a>
-        <a class="btn btn-outline-secondary" href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit" target="_blank" rel="noopener">
-          <i class="bi bi-calendar-check"></i> 예약 신청
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <!-- RECENT WORKS -->
-<section id="gallery" class="section">
-  <div class="container">
-
-    <div class="d-flex align-items-end justify-content-between mb-2">
-      <div>
-        <h2 class="fw-bold mb-1">최근 작업 사례</h2>
-        <div class="text-muted">
-          제로그라비티가 직접 진행한 실제 청소 현장입니다.
-        </div>
-      </div>
-
-      <div class="work-controls d-flex gap-2">
-        <button type="button" class="work-arrow" id="workPrev" aria-label="이전 작업">
-          <i class="bi bi-chevron-left"></i>
-        </button>
-
-        <button type="button" class="work-arrow" id="workNext" aria-label="다음 작업">
-          <i class="bi bi-chevron-right"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="zg-underline mt-3 mb-4"></div>
-
-    <div class="work-slider" id="workSlider">
-
-      <!-- 자동으로 블로그 글이 들어올 영역 -->
-      <div class="work-loading">
-        최근 작업 사례를 불러오는 중입니다.
-      </div>
-
-    </div>
-
-    <div class="text-center mt-4">
-      <a
-        href="https://blog.naver.com/nettclean"
-        target="_blank"
-        rel="noopener"
-        class="btn btn-outline-dark rounded-pill px-4"
-      >
-        네이버 블로그 작업사례 전체보기
-        <i class="bi bi-arrow-right ms-1"></i>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-  <!-- YOUTUBE -->
-<!-- YOUTUBE -->
-<section id="video" class="section bg-light">
-  <div class="container">
-
-    <div class="d-flex align-items-end justify-content-between mb-2">
-      <div>
-        <h2 class="fw-bold mb-1">작업 영상</h2>
-        <div class="text-muted">
-          제로그라비티의 실제 청소 작업 영상을 확인하세요.
-        </div>
-      </div>
-
-      <div class="video-controls d-flex gap-2">
-        <button type="button" class="video-arrow" id="videoPrev" aria-label="이전 영상">
-          <i class="bi bi-chevron-left"></i>
-        </button>
-
-        <button type="button" class="video-arrow" id="videoNext" aria-label="다음 영상">
-          <i class="bi bi-chevron-right"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="zg-underline mt-3 mb-4"></div>
-
-    <div class="video-slider" id="videoSlider">
-      <div class="video-loading">
-        최근 작업 영상을 불러오는 중입니다.
-      </div>
-    </div>
-
-    <div class="text-center mt-4">
-      <a
-        href="https://www.youtube.com/@Zero_Gravity24"
-        target="_blank"
-        rel="noopener"
-        class="btn btn-outline-dark rounded-pill px-4"
-      >
-        유튜브 작업영상 전체보기
-        <i class="bi bi-arrow-right ms-1"></i>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section zg-footer">
-    <div class="container">
-      <div class="row align-items-center g-3">
-        <div class="col-lg-7">
-          <h2 class="fw-bold mb-2">예약/문의</h2>
-          <p class="mb-0" style="color:rgba(255,255,255,.75)">버튼을 누르면 바로 연결됩니다.</p>
-        </div>
-        <div class="col-lg-5 d-flex flex-wrap gap-2 justify-content-lg-end">
-          <a class="btn btn-light" href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit" target="_blank" rel="noopener">
-            <i class="bi bi-calendar-check"></i> 예약 신청
-          </a>
-          <a class="btn btn-outline-light" href="tel:01081788502">
-            <i class="bi bi-telephone"></i> 전화 문의
-          </a>
-          <a class="btn btn-warning" href="https://open.kakao.com/o/syjFyPtg" target="_blank" rel="noopener">
-            <i class="bi bi-chat-dots"></i> 카카오톡
-          </a>
-        </div>
-      </div>
-
-      <hr class="my-4 opacity-25">
-
-      <div class="row g-2 small" style="color:rgba(255,255,255,.70)">
-        <div class="col-md">
-          © <span id="y"></span> Zero Gravity Cleaning. All rights reserved.
-        </div>
-        <div class="col-md text-md-end">
-          <span class="me-2"><i class="bi bi-geo-alt"></i>인천광역시 서구 에코로65 청라푸르지오시티 102동 2421호</span>
-          <span><i class="bi bi-clock"></i> 09:00~20:00</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-
-  <!-- floating contact -->
-  <div class="floating-contact">
-    <a href="https://open.kakao.com/o/syjFyPtg" target="_blank" rel="noopener" class="floating-btn kakao">
-      <i class="bi bi-chat-dots-fill"></i>
-      <span>카카오 상담</span>
-    </a>
-
-    <a href="tel:01081788502" class="floating-btn phone">
-      <i class="bi bi-telephone-fill"></i>
-      <span>전화 상담</span>
-    </a>
-
-    <a href="https://blog.naver.com/nettclean" target="_blank" rel="noopener" class="floating-btn blog">
-      <i class="bi bi-journal-text"></i>
-      <span>네이버 블로그</span>
-    </a>
-  </div>
-
-<!-- 블로그 스크립트 -->
-<script>
-  const workSlider = document.getElementById("workSlider");
-  const workPrev = document.getElementById("workPrev");
-  const workNext = document.getElementById("workNext");
-
-  function formatBlogDate(dateString) {
-    const date = new Date(dateString);
-
-    if (isNaN(date)) return "";
-
-    return date.toLocaleDateString("ko-KR", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit"
-    });
-  }
-
-  async function loadBlogPosts() {
-    try {
-      const response = await fetch("./blog-posts.json?v=" + Date.now());
-
-      if (!response.ok) {
-        throw new Error("블로그 데이터를 불러오지 못했습니다.");
-      }
-
-      const posts = await response.json();
-
-      if (!posts.length) {
-        throw new Error("표시할 블로그 글이 없습니다.");
-      }
-
-      workSlider.innerHTML = "";
-
-      posts.forEach((post) => {
-        const card = document.createElement("a");
-
-        card.className = "work-card";
-        card.href = post.link;
-        card.target = "_blank";
-        card.rel = "noopener";
-
-        const imageHTML = post.image
-          ? `<img class="work-image" src="${post.image}" alt="${post.title}" loading="lazy">`
-          : `<div class="work-image d-flex align-items-center justify-content-center text-muted">
-               작업 사례
-             </div>`;
-
-        card.innerHTML = `
-          <div class="work-card-inner">
-            ${imageHTML}
-
-            <div class="work-body">
-              <h3 class="work-title">${post.title}</h3>
-              <div class="work-date">${formatBlogDate(post.date)}</div>
-            </div>
-          </div>
-        `;
-
-        workSlider.appendChild(card);
-      });
-
-    } catch (error) {
-      console.error(error);
-
-      workSlider.innerHTML = `
-        <div class="work-loading">
-          작업 사례를 불러오지 못했습니다.
-          <br>
-          <a href="https://blog.naver.com/nettclean"
-             target="_blank"
-             rel="noopener">
-             네이버 블로그에서 확인하기
-          </a>
-        </div>
-      `;
-    }
-  }
-
-  function moveWorkSlider(direction) {
-    const card = workSlider.querySelector(".work-card");
-
-    if (!card) return;
-
-    const gap = parseFloat(getComputedStyle(workSlider).gap) || 0;
-    const move = card.getBoundingClientRect().width + gap;
-
-    workSlider.scrollBy({
-      left: direction * move,
-      behavior: "smooth"
-    });
-  }
-
-  workPrev.addEventListener("click", () => moveWorkSlider(-1));
-  workNext.addEventListener("click", () => moveWorkSlider(1));
-
-  loadBlogPosts();
-</script>
-
-<!--유튜브 스크립트-->
-<script>
-  const videoSlider = document.getElementById("videoSlider");
-  const videoPrev = document.getElementById("videoPrev");
-  const videoNext = document.getElementById("videoNext");
-
-  function formatVideoDate(dateString) {
-    const date = new Date(dateString);
-
-    if (isNaN(date)) return "";
-
-    return date.toLocaleDateString("ko-KR", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit"
-    });
-  }
-
-  async function loadYoutubeVideos() {
-    try {
-      const response = await fetch("./youtube-videos.json?v=" + Date.now());
-
-      if (!response.ok) {
-        throw new Error("유튜브 데이터를 불러오지 못했습니다.");
-      }
-
-      const videos = await response.json();
-
-      if (!videos.length) {
-        throw new Error("표시할 영상이 없습니다.");
-      }
-
-      videoSlider.innerHTML = "";
-
-      videos.forEach((video) => {
-        const card = document.createElement("div");
-        card.className = "video-card";
-
-        card.innerHTML = `
-          <div class="video-card-inner">
-
-            <div class="video-frame">
-              <iframe
-                src="${video.embed}"
-                title="${video.title}"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-            </div>
-
-            <div class="video-body">
-              <h3 class="video-title">${video.title}</h3>
-              <div class="video-date">
-                ${formatVideoDate(video.published)}
-              </div>
-            </div>
-
-          </div>
-        `;
-
-        videoSlider.appendChild(card);
-      });
-
-    } catch (error) {
-      console.error(error);
-
-      videoSlider.innerHTML = `
-        <div class="video-loading">
-          작업 영상을 불러오지 못했습니다.
-          <br>
           <a
-            href="https://www.youtube.com/@Zero_Gravity24"
+            class="btn btn-sm btn-outline-secondary"
+            href="tel:01081788502"
+          >
+
+            <i class="bi bi-telephone"></i>
+            전화
+
+          </a>
+
+
+          <a
+            class="btn btn-sm btn-warning"
+            href="https://open.kakao.com/o/syjFyPtg"
             target="_blank"
             rel="noopener"
           >
-            유튜브에서 확인하기
+
+            <i class="bi bi-chat-dots"></i>
+            카톡
+
           </a>
+
         </div>
-      `;
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <header
+    id="top"
+    class="hero"
+  >
+
+    <div
+      class="stars"
+      aria-hidden="true"
+    ></div>
+
+
+    <div class="container py-5">
+
+      <div
+        class="row align-items-center g-4 py-4"
+      >
+
+        <div class="col-lg-7">
+
+          <span
+            class="badge rounded-pill badge-soft px-3 py-2 mb-3"
+          >
+
+            <i class="bi bi-lightning-charge"></i>
+
+            당일 상담 · 맞춤 견적
+
+          </span>
+
+
+          <h1
+            class="display-5 fw-bold mb-3"
+          >
+            떠오르는 공간의 가치 제로그라비티
+          </h1>
+
+
+          <p class="lead mb-4 opacity-90">
+
+            상가 / 공장 / 관공서 / 사무실 / 정기청소 / 바닥청소 / 왁스코팅 / 특수청소
+
+            <br>
+
+            전문 장비와 현장 맞춤 작업으로 공간의 가치를 높여드립니다.
+
+          </p>
+
+
+          <div class="d-flex flex-wrap gap-2">
+
+            <a
+              class="btn btn-zg btn-lg"
+              href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit"
+              target="_blank"
+              rel="noopener"
+            >
+
+              예약 신청(구글폼)
+
+            </a>
+
+
+            <a
+              class="btn btn-outline-hero btn-lg"
+              href="tel:01081788502"
+            >
+
+              T. 010-8178-8502
+
+            </a>
+
+
+            <a
+              class="btn btn-kakao btn-lg"
+              href="https://open.kakao.com/o/syjFyPtg"
+              target="_blank"
+              rel="noopener"
+            >
+
+              카카오톡 상담
+
+            </a>
+
+          </div>
+
+
+          <div class="mt-4 small opacity-75">
+
+            운영시간 09:00~20:00
+
+            <br>
+
+            서비스 지역 서울 / 경기 / 인천 / 충청권
+
+            <br>
+
+            세금계산서 / 현금영수증 발행 가능
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+          <div
+            class="bg-white text-dark rounded-4 p-4 shadow-lg"
+          >
+
+            <div
+              class="d-flex align-items-center justify-content-between mb-2"
+            >
+
+              <h5 class="fw-bold mb-0">
+                빠른 견적 체크
+              </h5>
+
+
+              <span
+                class="badge text-bg-light border"
+              >
+
+                <i class="bi bi-shield-check"></i>
+
+                안심 진행
+
+              </span>
+
+            </div>
+
+
+            <div
+              class="zg-underline my-3"
+            ></div>
+
+
+            <ul class="mb-0">
+
+              <li>평수 / 면적</li>
+
+              <li>
+                청소 종류
+                (상가 / 공장 / 사무실 / 관공서 / 특수청소)
+              </li>
+
+              <li>희망 날짜 / 시간</li>
+
+              <li>
+                작업 범위 및 오염 상태
+              </li>
+
+            </ul>
+
+
+            <div
+              class="mt-3 small text-muted"
+            >
+
+              * 신청 후 확인 연락(전화/카톡)으로 일정 확정
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       SERVICES
+  ========================== -->
+
+  <section
+    id="services"
+    class="section"
+  >
+
+    <div class="container">
+
+      <div
+        class="d-flex align-items-end justify-content-between mb-4"
+      >
+
+        <div>
+
+          <h2 class="fw-bold mb-1">
+            서비스
+          </h2>
+
+          <div class="text-muted">
+            사업장과 현장에 필요한 청소 서비스를 맞춤 진행합니다.
+          </div>
+
+          <div
+            class="zg-underline mt-3"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="row g-3">
+
+        <!-- 상업공간 -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <div class="card h-100 zg-card">
+
+            <div class="card-body">
+
+              <div class="mb-2">
+
+                <i
+                  class="bi bi-shop fs-3 text-primary"
+                ></i>
+
+              </div>
+
+              <h5 class="fw-bold">
+                상업공간 청소
+              </h5>
+
+              <p class="text-muted mb-0">
+                식당청소, 상가청소, 매장청소,
+                주방청소, 바닥청소
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 공장 -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <div class="card h-100 zg-card">
+
+            <div class="card-body">
+
+              <div class="mb-2">
+
+                <i
+                  class="bi bi-buildings fs-3 text-success"
+                ></i>
+
+              </div>
+
+              <h5 class="fw-bold">
+                공장 청소
+              </h5>
+
+              <p class="text-muted mb-0">
+                공장 바닥, 분진, 기름때 등
+                현장 맞춤 전문 청소
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 사무실 -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <div class="card h-100 zg-card">
+
+            <div class="card-body">
+
+              <div class="mb-2">
+
+                <i
+                  class="bi bi-building fs-3"
+                  style="color:var(--zg-accent)"
+                ></i>
+
+              </div>
+
+              <h5 class="fw-bold">
+                사무실 청소
+              </h5>
+
+              <p class="text-muted mb-0">
+                사무공간, 공용부, 바닥 및
+                정기 관리
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 정기 -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <div class="card h-100 zg-card">
+
+            <div class="card-body">
+
+              <div class="mb-2">
+
+                <i
+                  class="bi bi-calendar2-week fs-3 text-dark"
+                ></i>
+
+              </div>
+
+              <h5 class="fw-bold">
+                정기 청소
+              </h5>
+
+              <p class="text-muted mb-0">
+                사업장 상황에 맞춰
+                주기와 작업 범위를 맞춤 관리
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="alert alert-primary mt-4 mb-0"
+      >
+
+        온라인 예약은 <b>구글폼</b>으로 접수하거나
+        빠른 상담은
+        <b>전화(010-8178-8502) / 카톡</b>으로
+        연락주세요!
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PRICES
+  ========================== -->
+
+  <section
+    id="prices"
+    class="section bg-light"
+  >
+
+    <div class="container">
+
+      <h2 class="fw-bold mb-1">
+        가격 안내
+      </h2>
+
+
+      <div class="text-muted">
+
+        무료 방문견적 후 안내드리고 있으며
+        현장 상황 및 작업 범위에 따라
+        금액이 달라질 수 있습니다.
+
+      </div>
+
+
+      <div
+        class="zg-underline mt-3 mb-4"
+      ></div>
+
+
+      <div class="row g-3">
+
+
+        <!-- 1. 상가 / 상업공간 -->
+
+        <div class="col-md-4">
+
+          <div
+            class="card h-100 zg-card price-card"
+          >
+
+            <img
+              src="images/price-commercial.jpg"
+              class="price-card-image"
+              alt="제로그라비티 상가 상업공간 청소"
+              loading="lazy"
+            >
+
+
+            <div class="card-body">
+
+              <h5 class="fw-bold">
+                상가/상업공간
+              </h5>
+
+
+              <p class="text-muted">
+
+                주방 기름때부터 홀 바닥까지 올인원 케어,
+                후드·덕트 및 구역별 맞춤 청소
+
+              </p>
+
+
+              <div>
+
+                기본:
+
+                <span class="fw-bold">
+                  ₩180,000~
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 2. 바닥 청소 -->
+
+        <div class="col-md-4">
+
+          <div
+            class="card h-100 zg-card price-card"
+          >
+
+            <img
+              src="images/price-floor.jpg"
+              class="price-card-image"
+              alt="제로그라비티 전문 바닥청소"
+              loading="lazy"
+            >
+
+
+            <div class="card-body">
+
+              <h5 class="fw-bold">
+                바닥 청소
+              </h5>
+
+
+              <p class="text-muted">
+
+                보도블럭, 데코타일,
+                주차장, 포세린타일,
+                공장 바닥 등 전문 기계세척
+
+              </p>
+
+
+              <div>
+
+                기본:
+
+                <span class="fw-bold">
+                  ₩200,000~
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 3. 에어컨 -->
+
+        <div class="col-md-4">
+
+          <div
+            class="card h-100 zg-card price-card"
+          >
+
+            <img
+              src="images/price-aircon.jpg"
+              class="price-card-image"
+              alt="제로그라비티 시스템에어컨 분해청소"
+              loading="lazy"
+            >
+
+
+            <div class="card-body">
+
+              <h5 class="fw-bold">
+                에어컨 분해청소
+              </h5>
+
+
+              <p class="text-muted">
+
+                1Way·2Way·4Way
+                시스템에어컨 전문 분해 세척
+
+              </p>
+
+
+              <div>
+
+                기본:
+
+                <span class="fw-bold">
+                  ₩80,000~
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 4. 외벽 / 유리창 -->
+
+        <div class="col-md-4">
+
+          <div
+            class="card h-100 zg-card price-card"
+          >
+
+            <img
+              src="images/price-window.jpg"
+              class="price-card-image"
+              alt="제로그라비티 외벽 유리창 청소"
+              loading="lazy"
+            >
+
+
+            <div class="card-body">
+
+              <h5 class="fw-bold">
+                외벽/유리창 청소
+              </h5>
+
+
+              <p class="text-muted">
+
+                전문 장비와 숙련된 작업으로
+                진행하는 외벽·유리창 청소
+
+              </p>
+
+
+              <div>
+
+                기본:
+
+                <span class="fw-bold">
+                  ₩150,000~
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 5. 왁스코팅 -->
+
+        <div class="col-md-4">
+
+          <div
+            class="card h-100 zg-card price-card"
+          >
+
+            <img
+              src="images/price-wax.jpg"
+              class="price-card-image"
+              alt="제로그라비티 바닥 왁스코팅"
+              loading="lazy"
+            >
+
+
+            <div class="card-body">
+
+              <h5 class="fw-bold">
+                왁스코팅
+              </h5>
+
+
+              <p class="text-muted">
+
+                바닥 상태에 맞는 전문 코팅으로
+                바닥 보호 및 광택 관리
+
+              </p>
+
+
+              <div>
+
+                기본:
+
+                <span class="fw-bold">
+                  ₩250,000~
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- 6. 특수청소 -->
+
+        <div class="col-md-4">
+
+          <div
+            class="card h-100 zg-card price-card"
+          >
+
+            <img
+              src="images/price-special.jpg"
+              class="price-card-image"
+              alt="제로그라비티 특수청소"
+              loading="lazy"
+            >
+
+
+            <div class="card-body">
+
+              <h5 class="fw-bold">
+                특수청소
+              </h5>
+
+
+              <p class="text-muted">
+
+                비둘기 오염, 쓰레기집,
+                고독사 현장 등
+                특수 환경 전문 클리닝
+
+              </p>
+
+
+              <div>
+
+                기본:
+
+                <span class="fw-bold">
+                  무료 방문견적
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="mt-4 d-flex flex-wrap gap-2"
+      >
+
+        <a
+          class="btn btn-zg"
+          href="#contact"
+        >
+
+          <i class="bi bi-send"></i>
+
+          빠른문의
+
+        </a>
+
+
+        <a
+          class="btn btn-outline-secondary"
+          href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <i class="bi bi-calendar-check"></i>
+
+          예약 신청
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       RECENT WORKS
+  ========================== -->
+
+  <section
+    id="gallery"
+    class="section"
+  >
+
+    <div class="container">
+
+
+      <div
+        class="d-flex align-items-end justify-content-between mb-2"
+      >
+
+        <div>
+
+          <h2 class="fw-bold mb-1">
+            최근 작업 사례
+          </h2>
+
+          <div class="text-muted">
+            제로그라비티가 직접 진행한 실제 청소 현장입니다.
+          </div>
+
+        </div>
+
+
+        <div
+          class="work-controls d-flex gap-2"
+        >
+
+          <button
+            type="button"
+            class="work-arrow"
+            id="workPrev"
+            aria-label="이전 작업"
+          >
+
+            <i class="bi bi-chevron-left"></i>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="work-arrow"
+            id="workNext"
+            aria-label="다음 작업"
+          >
+
+            <i class="bi bi-chevron-right"></i>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="zg-underline mt-3 mb-4"
+      ></div>
+
+
+      <div
+        class="work-slider"
+        id="workSlider"
+      >
+
+        <div class="work-loading">
+          최근 작업 사례를 불러오는 중입니다.
+        </div>
+
+      </div>
+
+
+      <div class="text-center mt-4">
+
+        <a
+          href="https://blog.naver.com/nettclean"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-outline-dark rounded-pill px-4"
+        >
+
+          네이버 블로그 작업사례 전체보기
+
+          <i
+            class="bi bi-arrow-right ms-1"
+          ></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       YOUTUBE
+  ========================== -->
+
+  <section
+    id="video"
+    class="section bg-light"
+  >
+
+    <div class="container">
+
+
+      <div
+        class="d-flex align-items-end justify-content-between mb-2"
+      >
+
+        <div>
+
+          <h2 class="fw-bold mb-1">
+            작업 영상
+          </h2>
+
+          <div class="text-muted">
+
+            제로그라비티의 실제 청소 작업 영상을 확인하세요.
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="video-controls d-flex gap-2"
+        >
+
+          <button
+            type="button"
+            class="video-arrow"
+            id="videoPrev"
+            aria-label="이전 영상"
+          >
+
+            <i class="bi bi-chevron-left"></i>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="video-arrow"
+            id="videoNext"
+            aria-label="다음 영상"
+          >
+
+            <i class="bi bi-chevron-right"></i>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="zg-underline mt-3 mb-4"
+      ></div>
+
+
+      <div
+        class="video-slider"
+        id="videoSlider"
+      >
+
+        <div class="video-loading">
+          최근 작업 영상을 불러오는 중입니다.
+        </div>
+
+      </div>
+
+
+      <div class="text-center mt-4">
+
+        <a
+          href="https://www.youtube.com/@Zero_Gravity24"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-outline-dark rounded-pill px-4"
+        >
+
+          유튜브 작업영상 전체보기
+
+          <i
+            class="bi bi-arrow-right ms-1"
+          ></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section
+    id="contact"
+    class="section zg-footer"
+  >
+
+    <div class="container">
+
+      <div
+        class="row align-items-center g-3"
+      >
+
+        <div class="col-lg-7">
+
+          <h2 class="fw-bold mb-2">
+            예약/문의
+          </h2>
+
+          <p
+            class="mb-0"
+            style="color:rgba(255,255,255,.75)"
+          >
+
+            버튼을 누르면 바로 연결됩니다.
+
+          </p>
+
+        </div>
+
+
+        <div
+          class="col-lg-5 d-flex flex-wrap gap-2 justify-content-lg-end"
+        >
+
+          <a
+            class="btn btn-light"
+            href="https://docs.google.com/forms/d/1IQWAZoUA5dRcYVBtkQBYQaoSyhzZy9oFhJd2jX5_fPQ/edit"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <i class="bi bi-calendar-check"></i>
+
+            예약 신청
+
+          </a>
+
+
+          <a
+            class="btn btn-outline-light"
+            href="tel:01081788502"
+          >
+
+            <i class="bi bi-telephone"></i>
+
+            전화 문의
+
+          </a>
+
+
+          <a
+            class="btn btn-warning"
+            href="https://open.kakao.com/o/syjFyPtg"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <i class="bi bi-chat-dots"></i>
+
+            카카오톡
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <hr class="my-4 opacity-25">
+
+
+      <div
+        class="row g-2 small"
+        style="color:rgba(255,255,255,.70)"
+      >
+
+        <div class="col-md">
+
+          ©
+          <span id="y"></span>
+          Zero Gravity Cleaning.
+          All rights reserved.
+
+        </div>
+
+
+        <div
+          class="col-md text-md-end"
+        >
+
+          <span class="me-2">
+
+            <i class="bi bi-geo-alt"></i>
+
+            인천광역시 서구 에코로65
+            청라푸르지오시티 102동 2421호
+
+          </span>
+
+
+          <span>
+
+            <i class="bi bi-clock"></i>
+
+            09:00~20:00
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FLOATING CONTACT -->
+
+  <div class="floating-contact">
+
+    <a
+      href="https://open.kakao.com/o/syjFyPtg"
+      target="_blank"
+      rel="noopener"
+      class="floating-btn kakao"
+    >
+
+      <i class="bi bi-chat-dots-fill"></i>
+
+      <span>카카오 상담</span>
+
+    </a>
+
+
+    <a
+      href="tel:01081788502"
+      class="floating-btn phone"
+    >
+
+      <i class="bi bi-telephone-fill"></i>
+
+      <span>전화 상담</span>
+
+    </a>
+
+
+    <a
+      href="https://blog.naver.com/nettclean"
+      target="_blank"
+      rel="noopener"
+      class="floating-btn blog"
+    >
+
+      <i class="bi bi-journal-text"></i>
+
+      <span>네이버 블로그</span>
+
+    </a>
+
+  </div>
+
+
+  <!-- =========================
+       YEAR
+  ========================== -->
+
+  <script>
+
+    document.getElementById("y").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+
+  <!-- =========================
+       NAVER BLOG
+  ========================== -->
+
+  <script>
+
+    const workSlider =
+      document.getElementById("workSlider");
+
+    const workPrev =
+      document.getElementById("workPrev");
+
+    const workNext =
+      document.getElementById("workNext");
+
+
+    function formatBlogDate(dateString){
+
+      const date =
+        new Date(dateString);
+
+      if(isNaN(date)){
+        return "";
+      }
+
+      return date.toLocaleDateString(
+        "ko-KR",
+        {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }
+      );
+
     }
-  }
 
-  function moveVideoSlider(direction) {
-    const card = videoSlider.querySelector(".video-card");
 
-    if (!card) return;
+    async function loadBlogPosts(){
 
-    const gap = parseFloat(getComputedStyle(videoSlider).gap) || 0;
-    const move = card.getBoundingClientRect().width + gap;
+      try{
 
-    videoSlider.scrollBy({
-      left: direction * move,
-      behavior: "smooth"
-    });
-  }
+        const response =
+          await fetch(
+            "./blog-posts.json?v=" +
+            Date.now()
+          );
 
-  videoPrev.addEventListener("click", () => moveVideoSlider(-1));
-  videoNext.addEventListener("click", () => moveVideoSlider(1));
 
-  loadYoutubeVideos();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        if(!response.ok){
+
+          throw new Error(
+            "블로그 데이터를 불러오지 못했습니다."
+          );
+
+        }
+
+
+        const posts =
+          await response.json();
+
+
+        if(!posts.length){
+
+          throw new Error(
+            "표시할 블로그 글이 없습니다."
+          );
+
+        }
+
+
+        workSlider.innerHTML = "";
+
+
+        posts.forEach((post)=>{
+
+          const card =
+            document.createElement("a");
+
+
+          card.className =
+            "work-card";
+
+          card.href =
+            post.link;
+
+          card.target =
+            "_blank";
+
+          card.rel =
+            "noopener";
+
+
+          const imageHTML =
+            post.image
+
+            ? `
+              <img
+                class="work-image"
+                src="${post.image}"
+                alt="${post.title}"
+                loading="lazy"
+              >
+            `
+
+            : `
+              <div
+                class="work-image d-flex align-items-center justify-content-center text-muted"
+              >
+                작업 사례
+              </div>
+            `;
+
+
+          card.innerHTML = `
+
+            <div class="work-card-inner">
+
+              ${imageHTML}
+
+              <div class="work-body">
+
+                <h3 class="work-title">
+                  ${post.title}
+                </h3>
+
+                <div class="work-date">
+                  ${formatBlogDate(post.date)}
+                </div>
+
+              </div>
+
+            </div>
+
+          `;
+
+
+          workSlider.appendChild(card);
+
+        });
+
+
+      }catch(error){
+
+        console.error(error);
+
+
+        workSlider.innerHTML = `
+
+          <div class="work-loading">
+
+            작업 사례를 불러오지 못했습니다.
+
+            <br>
+
+            <a
+              href="https://blog.naver.com/nettclean"
+              target="_blank"
+              rel="noopener"
+            >
+
+              네이버 블로그에서 확인하기
+
+            </a>
+
+          </div>
+
+        `;
+
+      }
+
+    }
+
+
+    function moveWorkSlider(direction){
+
+      const card =
+        workSlider.querySelector(
+          ".work-card"
+        );
+
+
+      if(!card){
+        return;
+      }
+
+
+      const gap =
+        parseFloat(
+          getComputedStyle(
+            workSlider
+          ).gap
+        ) || 0;
+
+
+      const move =
+        card.getBoundingClientRect().width +
+        gap;
+
+
+      workSlider.scrollBy({
+
+        left:
+          direction * move,
+
+        behavior:
+          "smooth"
+
+      });
+
+    }
+
+
+    workPrev.addEventListener(
+      "click",
+      ()=>moveWorkSlider(-1)
+    );
+
+
+    workNext.addEventListener(
+      "click",
+      ()=>moveWorkSlider(1)
+    );
+
+
+    loadBlogPosts();
+
+  </script>
+
+
+  <!-- =========================
+       YOUTUBE
+  ========================== -->
+
+  <script>
+
+    const videoSlider =
+      document.getElementById("videoSlider");
+
+    const videoPrev =
+      document.getElementById("videoPrev");
+
+    const videoNext =
+      document.getElementById("videoNext");
+
+
+    function formatVideoDate(dateString){
+
+      const date =
+        new Date(dateString);
+
+
+      if(isNaN(date)){
+        return "";
+      }
+
+
+      return date.toLocaleDateString(
+        "ko-KR",
+        {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }
+      );
+
+    }
+
+
+    async function loadYoutubeVideos(){
+
+      try{
+
+        const response =
+          await fetch(
+            "./youtube-videos.json?v=" +
+            Date.now()
+          );
+
+
+        if(!response.ok){
+
+          throw new Error(
+            "유튜브 데이터를 불러오지 못했습니다."
+          );
+
+        }
+
+
+        const videos =
+          await response.json();
+
+
+        if(!videos.length){
+
+          throw new Error(
+            "표시할 영상이 없습니다."
+          );
+
+        }
+
+
+        videoSlider.innerHTML = "";
+
+
+        videos.forEach((video)=>{
+
+          const card =
+            document.createElement("div");
+
+
+          card.className =
+            "video-card";
+
+
+          card.innerHTML = `
+
+            <div class="video-card-inner">
+
+              <div class="video-frame">
+
+                <iframe
+                  src="${video.embed}"
+                  title="${video.title}"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+
+              </div>
+
+
+              <div class="video-body">
+
+                <h3 class="video-title">
+                  ${video.title}
+                </h3>
+
+                <div class="video-date">
+
+                  ${formatVideoDate(
+                    video.published
+                  )}
+
+                </div>
+
+              </div>
+
+            </div>
+
+          `;
+
+
+          videoSlider.appendChild(card);
+
+        });
+
+
+      }catch(error){
+
+        console.error(error);
+
+
+        videoSlider.innerHTML = `
+
+          <div class="video-loading">
+
+            작업 영상을 불러오지 못했습니다.
+
+            <br>
+
+            <a
+              href="https://www.youtube.com/@Zero_Gravity24"
+              target="_blank"
+              rel="noopener"
+            >
+
+              유튜브에서 확인하기
+
+            </a>
+
+          </div>
+
+        `;
+
+      }
+
+    }
+
+
+    function moveVideoSlider(direction){
+
+      const card =
+        videoSlider.querySelector(
+          ".video-card"
+        );
+
+
+      if(!card){
+        return;
+      }
+
+
+      const gap =
+        parseFloat(
+          getComputedStyle(
+            videoSlider
+          ).gap
+        ) || 0;
+
+
+      const move =
+        card.getBoundingClientRect().width +
+        gap;
+
+
+      videoSlider.scrollBy({
+
+        left:
+          direction * move,
+
+        behavior:
+          "smooth"
+
+      });
+
+    }
+
+
+    videoPrev.addEventListener(
+      "click",
+      ()=>moveVideoSlider(-1)
+    );
+
+
+    videoNext.addEventListener(
+      "click",
+      ()=>moveVideoSlider(1)
+    );
+
+
+    loadYoutubeVideos();
+
+  </script>
+
+
+  <!-- Bootstrap JS -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
 </body>
 </html>
